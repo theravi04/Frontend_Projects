@@ -52,3 +52,7 @@ getWeatherButton.addEventListener("click", async function(){
         console.log(error);
     }
 })
+
+userInput.addEventListener("click" , ()=>{
+    userInput.value =""
+})
