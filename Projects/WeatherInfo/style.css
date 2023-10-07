@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap');
+
+body{
+    font-family: 'Shantell Sans', cursive;
+    text-align: center;
+    padding: 15px;
+}
+
+h1{
+    font-size: 35px;
+}
+
+.input-container input[type="text"]{
+    font-family: 'Shantell Sans', cursive;
+    color: aqua;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #c1c1c1;
+    border-radius: 4px;
+    font-size: 22px;
+    text-align: center;
+    color: #000000; /* Text color */
+    background-color: #f2f2f2; /* Background color */
+}
+
+.dropdown{
+    font-family: 'Shantell Sans', cursive;
+    text-align: center;
+    margin: 25px;
+}
+
+.dropdown select{
+    font-family: 'Shantell Sans', cursive;
+    text-align: center;
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    font-size: 18px;
+}
+
+#getWeatherButton{
+    font-family: 'Shantell Sans', cursive;
+    margin: 10px;
+    padding: 9px;
+    font-size: 15px;
+    border: 1px solid #c1c1c1;
+    border-radius: 4px;
+}
+
+#displayResult{
+    font-size: 22px;
+}
