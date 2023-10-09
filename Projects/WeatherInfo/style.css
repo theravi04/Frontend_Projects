@@ -8,24 +8,20 @@
 body {
     font-family: 'Shantell Sans', cursive;
     text-align: center;
-    padding: 15px;
     display: flex;
     justify-content: center;
-}
-
-.main {
-    width: 50%;
-    margin-top: 2em;
-    padding: 100px;
     background-image: url("img.webp");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #68ae9d;
-    background-blend-mode: darken;
-    border: 2px solid black;
-    border-radius: 5px;
+    height: 100vh;
 }
 
+.head{
+    display: inline-flex;
+    justify-self: center;
+    margin-top: 50%;
+}
 h1 {
     font-size: 35px;
     margin-bottom: 25px;
@@ -41,14 +37,14 @@ h1 {
     font-size: 22px;
     text-align: center;
     color: #000000;
-    /* Text color */
-    background-color: #f2f2f2;
-    /* Background color */
+    background-color: lightgrey;
 }
 
 .dropdown {
     font-family: 'Shantell Sans', cursive;
     text-align: center;
+    display: flex;
+    justify-content: center;
     margin: 25px;
 }
 
@@ -59,7 +55,7 @@ h1 {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #f2f2f2;
+    background-color: lightgrey;
     font-size: 18px;
 }
 
@@ -68,6 +64,7 @@ h1 {
     margin: 10px;
     margin-bottom: 30px;
     padding: 9px;
+    background-color: lightgrey;
     font-size: 15px;
     border: 1px solid #c1c1c1;
     border-radius: 4px;
@@ -76,6 +73,4 @@ h1 {
 
 #displayResult {
     font-size: 22px;
-    background-color: white;
-
 }

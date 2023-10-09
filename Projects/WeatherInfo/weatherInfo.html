@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Info</title>
-    <link rel="stylesheet" href="style.css">
-    </head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="main">
-    <h1>All Weather Info</h1>
+      <div class="head"><h1>All Weather Info</h1></div>
 
-    <div class="input-container">
-        <input type="text" placeholder="Enter your City" id="userInput">
-    </div>
-    
-    <div class="dropdown">
+      <div class="input-container">
+        <input type="text" placeholder="Enter your City" id="userInput" />
+      </div>
+
+      <div class="dropdown">
         <select id="weatherAttribute">
-            <option value="none">Select Among These</option>
-            <option value="temp">Temperature</option>
-            <option value="humidity">Humidity</option>
-            <option value="pressure">Pressure</option>
-            <option value="wind_speed">Wind Speed</option>
-            <option value="temp_max">Max Temp</option>
-            <option value="temp_min">Min Temp</option>
-            <option value="feels_like">Feels Like</option>
+          <option value="none">Select Among These</option>
+          <option value="temp">Temperature</option>
+          <option value="humidity">Humidity</option>
+          <option value="pressure">Pressure</option>
+          <option value="wind_speed">Wind Speed</option>
+          <option value="temp_max">Max Temp</option>
+          <option value="temp_min">Min Temp</option>
+          <option value="feels_like">Feels Like</option>
         </select>
+      </div>
+
+      <button id="getWeatherButton">Get Weather</button>
+
+      <p id="displayResult"></p>
     </div>
-
-    <button id="getWeatherButton">Get Weather</button>
-
-    <p id="displayResult"></p>
-</div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
