@@ -1,76 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
-    font-family: 'Shantell Sans', cursive;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    background-image: url("img.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+  font-family: "Shantell Sans", cursive;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-image: url("img.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
-.head{
-    display: inline-flex;
-    justify-self: center;
-    margin-top: 50%;
+.head {
+  /* display: inline-flex;
+  justify-self: center;
+   margin-top: 50%; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #6a8dadde;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
 }
 h1 {
-    font-size: 35px;
-    margin-bottom: 25px;
+  font-size: 35px;
+  margin-bottom: 25px;
 }
 
 .input-container input[type="text"] {
-    font-family: 'Shantell Sans', cursive;
-    color: aqua;
-    width: 200px;
-    padding: 10px;
-    border: 1px solid #c1c1c1;
-    border-radius: 4px;
-    font-size: 22px;
-    text-align: center;
-    color: #000000;
-    background-color: lightgrey;
+  font-family: "Shantell Sans", cursive;
+  color: aqua;
+  width: 200px;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid #c1c1c1;
+  border-radius: 7px;
+  font-size: 22px;
+  text-align: center;
+  color: #000000;
+  background-color: lightgrey;
 }
 
 .dropdown {
-    font-family: 'Shantell Sans', cursive;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin: 25px;
+  font-family: "Shantell Sans", cursive;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 25px;
 }
 
 .dropdown select {
-    font-family: 'Shantell Sans', cursive;
-    text-align: center;
-    width: 220px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: lightgrey;
-    font-size: 18px;
+  font-family: "Shantell Sans", cursive;
+  text-align: center;
+  width: 220px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: lightgrey;
+  font-size: 18px;
 }
 
 #getWeatherButton {
-    font-family: 'Shantell Sans', cursive;
-    margin: 10px;
-    margin-bottom: 30px;
-    padding: 9px;
-    background-color: lightgrey;
-    font-size: 15px;
-    border: 1px solid #c1c1c1;
-    border-radius: 4px;
-
+  font-family: "Shantell Sans", cursive;
+  margin: 10px;
+  margin-bottom: 30px;
+  padding: 9px;
+  background-color: lightgrey;
+  font-size: 15px;
+  border: 1px solid #c1c1c1;
+  border-radius: 4px;
 }
 
 #displayResult {
-    font-size: 22px;
+  font-size: 22px;
+}
+
+input[type="text"]:focus {
+  outline: none; 
+  border: 2px solid #007bff; 
+}
+input[type="text"]:focus {
+    background-color: rgba(211, 211, 211, 0.733);
+}
+
+.form-cointainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
