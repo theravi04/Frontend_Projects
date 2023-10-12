@@ -16,7 +16,7 @@
 ```terminal
 git clone https://github.com/theravi04/Frontend_Projects.git
 ```
-- Navigate to project directory.
+- Navigate to the project directory.
 ```terminal
 cd HacktoberFest-23
 ```
@@ -35,7 +35,7 @@ git add .
 ```markdown
 git commit -m "Relevant message"
 ```
-- Then push 
+- Then push your changes 
 ```markdown
 git push origin my-new-branch
 ```
@@ -47,7 +47,7 @@ git push origin my-new-branch
 
 ## Avoid Conflicts {Syncing your fork}
 
-An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PR's may be merged while you're working on your branch/fork.   
+An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PRs may be merged while you're working on your branch/fork.   
 
 ```terminal
 git remote add upstream https://github.com/theravi04/Frontend_Projects.git
@@ -70,13 +70,13 @@ For more information on syncing forks [read this article from Github](https://he
 # FAQs (Frequently Asked Questions)
 
 - Who all can contribute?
-  - Anyone with a github account and who is signed up for
+  - Anyone with a GitHub account and who is signed up for
 [hacktoberfest](https://hacktoberfest.com/) :)
 - Are you getting paid for this?
   - Sadly no. But I think we should. This is 100% unofficial and I do it for fun, fame and glory.
 - Who are you and why are you doing this?
   - I am Ravi & I am doing this because I love Open Source and Hacktoberfest. I want to make it easier for people to get started with Hacktoberfest and Open Source.
-- How many pull request (PR) must be made?
+- How many pull requests (PR) must be made?
   - 4
 - What is the event for?
   - For the open source community engagement and learn how to contribute to open source.

@@ -14,7 +14,7 @@
 ```terminal
 git clone https://github.com/theravi04/Frontend_Projects.git
 ```
-- Navigate to project directory.
+- Navigate to the project directory.
 ```terminal
 cd Hacktoberfest2022
 ```
@@ -45,7 +45,7 @@ git push origin my-new-branch
 
 ## Avoid Conflicts {Syncing your fork}
 
-An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PR's may be merged while you're working on your branch/fork.   
+An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PRs may be merged while you're working on your branch/fork.   
 
 ```terminal
 git remote add upstream https://github.com/theravi04/Frontend_Projects.git
