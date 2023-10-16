@@ -74,3 +74,30 @@ h1 {
 #displayResult {
     font-size: 22px;
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+  .left{
+    position: absolute;
+    left: 23%; 
+    top: 45%; 
+    transform: translateY(-50%);
+  }
+
+  .right{
+    position: absolute;
+    right: 23%; 
+    top: 45%; 
+    transform: translateY(-50%);
+  }
