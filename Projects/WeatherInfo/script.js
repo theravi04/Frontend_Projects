@@ -4,6 +4,7 @@ const userInput = document.getElementById("userInput");
 const getWeatherButton = document.getElementById("getWeatherButton");
 const weatherAttribute = document.getElementById("weatherAttribute");
 const displayResult = document.getElementById("displayResult");
+const suggestionContainer = document.getElementById("suggestionContainer");
 
 getWeatherButton.addEventListener("click", async function(){
 
@@ -28,9 +29,8 @@ getWeatherButton.addEventListener("click", async function(){
         }
         else if(selectedAttribute === "humidity"){
             weatherInfo = data.main.humidity;
-        }
-        else if(selectedAttribute === "pressure"){
-            weatherInfo = data.main.pressure;
+    } else if (selectedAttribute === "pressure") {
+      weatherInfo = data.main.pressure;
         }
         else if(selectedAttribute === "feels_like"){
             weatherInfo = data.main.feels_like;
@@ -50,9 +50,60 @@ getWeatherButton.addEventListener("click", async function(){
     } catch (error) {
         displayResult.textContent = "Error while fetching data from API";
         console.log(error);
-    }
-})
+    }});
 
-userInput.addEventListener("click" , ()=>{
-    userInput.value =""
-})
+userInput.addEventListener("click", () => {
+  userInput.value = "";
+});
+
+userInput.addEventListener("input", async function () {
+  const query = userInput.value;
+
+  if (!query) {
+    suggestionContainer.style.display = "none";
+    return;
+  }
+
+  const suggestions = await fetchCitySuggestions(query);
+
+  displaySuggestions(suggestions);
+});
+
+function displaySuggestions(cities) {
+  suggestionContainer.innerHTML = "";
+
+  const filteredCities = cities.filter((city) =>
+    city.toLowerCase().startsWith(userInput.value.toLowerCase())
+  );
+
+  filteredCities.forEach((city) => {
+    const cityDiv = document.createElement("div");
+    cityDiv.textContent = city;
+    cityDiv.addEventListener("click", function () {
+      userInput.value = city;
+      suggestionContainer.style.display = "none";
+    });
+    suggestionContainer.appendChild(cityDiv);
+  });
+
+  suggestionContainer.style.display = filteredCities.length ? "block" : "none";
+}
+
+async function fetchCitySuggestions(query) {
+  const USERNAME = "";  // Replace with your GeoNames username
+  const API_URL = `http://api.geonames.org/searchJSON?q=${query}&maxRows=10&username=${USERNAME}`;
+
+  try {
+      const response = await fetch(API_URL);
+      const data = await response.json();
+      console.log(data, 'data')
+
+      // Extract city names from the response data
+      const cityNames = data.geonames.map(geoName => geoName.name);
+      console.log(cityNames, 'cityNames')
+      return cityNames;
+  } catch (error) {
+      console.error("Error fetching city suggestions:", error);
+      return [];
+  }
+}

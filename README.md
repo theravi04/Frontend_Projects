@@ -45,6 +45,19 @@ git push origin my-new-branch
 
 <br>
 
+## Add Geo Location API
+Visit this website: https://www.geonames.org/
+
+```Create an account
+
+Create and account. After this, copy your user name.
+
+```Enable Free Services
+Visit this link after creating your account: https://www.geonames.org/manageaccount
+Then enable the free services. There should be a Click here to enable link.
+
+Enter your user name in script.js in the const USERNAME = ""; 
+
 ## Avoid Conflicts {Syncing your fork}
 
 An easy way to avoid conflicts is to add an 'upstream' for your git repo, as other PRs may be merged while you're working on your branch/fork.   
