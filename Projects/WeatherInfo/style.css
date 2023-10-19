@@ -101,3 +101,25 @@ h1 {
     top: 45%; 
     transform: translateY(-50%);
   }
+
+  .input-container {
+    position: relative;
+  }
+  
+  .suggestion-dropdown {
+      background-color: white;
+      max-height: 350px;
+      overflow-y: auto;
+      position: absolute;
+      width: 100%;
+      z-index: 1000; 
+      display: none;
+      border-radius: 8px;
+    }
+    .suggestion-dropdown div {
+      padding: 10px;
+      cursor: pointer;
+    }
+    .suggestion-dropdown div:hover {
+      background-color: lightgray;
+    }
