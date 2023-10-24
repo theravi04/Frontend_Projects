@@ -1,0 +1,21 @@
+/* *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+} */
+body{
+    width: 1005;
+   height: 100%;
+    /* background: url('grey.jpg') no-repeat; */
+    background-size: cover;
+    background-position: center;
+}
+.testbox{
+    
+    /* background: purple; */
+    border-radius: 10px;
+    color: blue;
+    padding: 40px 35px 55px;
+    align-items: center;
+}
