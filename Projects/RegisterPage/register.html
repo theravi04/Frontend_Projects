@@ -7,6 +7,7 @@
     <title>Register Form</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
         type='text/css'>
+        <link rel="stylesheet" href="style.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
     <style>
         body,
@@ -59,39 +60,49 @@
             font-size: 16px;
             color: #4c4c4c;
         }
+        body{
+           
+           background-size: cover;
+        }
 
         p {
             font-size: 12px;
             width: 150px;
             display: inline-block;
             margin-left: 18px;
+            color: white;
         }
 
         h1 {
+
             font-size: 32px;
-            font-weight: 300;
-            color: #4c4c4c;
+            font-weight: 900;
+            color: white;
             text-align: center;
             padding-top: 10px;
             margin-bottom: 10px;
         }
 
         html {
-            background-color: #ffffff;
+            background: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100%;
         }
 
         .testbox {
             margin: 20px auto;
-            width: 343px;
-            height: 464px;
+            width: 483px;
+            height: 483px;
             -webkit-border-radius: 8px/7px;
             -moz-border-radius: 8px/7px;
             border-radius: 8px/7px;
-            background-color: #ebebeb;
+            background-color: rgba(255, 255, 255, .1);
             -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
             -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
             box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
             border: solid 1px #cbc9c9;
+            align-items: center;
         }
 
         input[type=radio] {
@@ -109,6 +120,7 @@
             display: inline-block;
             position: relative;
             margin-bottom: 15px;
+            margin-left: 40px;
         }
 
         label.radio:before {
@@ -133,7 +145,7 @@
             left: 4.5px;
             border: 3px solid #ffffff;
             border-top: none;
-            border-right: none;
+            border-right: 40px;
 
             -webkit-transform: rotate(-45deg);
             -moz-transform: rotate(-45deg);
@@ -153,8 +165,8 @@
 
         input[type=text],
         input[type=password] {
-            width: 200px;
-            height: 39px;
+            width: 300px;
+            height: 37px;
             -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
             -moz-border-radius: 0px 4px 4px 0px/0px 0px 4px 4px;
             border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
@@ -174,8 +186,9 @@
 
         #icon {
             display: inline-block;
-            width: 30px;
-            background-color: #3a57af;
+            width: 40px;
+            height: 23px;;
+            background-color: #55deed;
             padding: 8px 0px 8px 15px;
             margin-left: 15px;
             -webkit-border-radius: 4px 0px 0px 4px;
@@ -191,6 +204,7 @@
         .gender {
             margin-left: 30px;
             margin-bottom: 30px;
+            color: white;
         }
 
         .accounttype {
@@ -212,7 +226,7 @@
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
             border-radius: 5px;
-            background-color: #3a57af;
+            background-color: #55deed;
             -webkit-box-shadow: 0 3px rgba(58, 87, 175, .75);
             -moz-box-shadow: 0 3px rgba(58, 87, 175, .75);
             box-shadow: 0 3px rgba(58, 87, 175, .75);
@@ -223,7 +237,7 @@
 
         a.button:hover {
             top: 3px;
-            background-color: #2e458b;
+            background-color: #559fed;
             -webkit-box-shadow: none;
             -moz-box-shadow: none;
             box-shadow: none;
@@ -234,11 +248,36 @@
 
 <body>
     <div class="testbox">
-        <h1>Registration Form</h1>
-
         <form action="/">
-            <hr>
-            <div class="accounttype">
+        <h1>Registration Form</h1>
+        <hr>
+        <div class="input-box">
+            <div class="input-field">
+                <label id="icon" for="name"><i class="icon-envelope "></i></label>
+                <input type="text" placeholder="Email" required>
+            </div>
+            <div class="input-field">
+                <label id="icon" for="name"><i class="icon-user"></i></label>
+                <input type="text" placeholder="Name" required>
+            </div>
+            <div class="input-field">
+                <label id="icon" for="name"><i class="icon-shield"></i></label>
+                <input type="password" placeholder="Name" required>
+            </div>
+            <div class="gender">
+                <input type="radio" value="None" id="male" name="gender" checked />
+                <label for="male" class="radio" chec>Male</label>
+                <input type="radio" value="None" id="female" name="gender" />
+                <label for="female" class="radio">Female</label>
+            </div>
+            <p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
+            <a href="#" class="button" style="align-items: start;">Register</a>
+        </div>
+    </form>
+        
+            
+
+            <!-- <div class="accounttype">
                 <input type="radio" value="None" id="radioOne" name="account" checked />
                 <label for="radioOne" class="radio" chec>Personal</label>
                 <input type="radio" value="None" id="radioTwo" name="account" />
@@ -259,8 +298,8 @@
             </div>
             <p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
             <a href="#" class="button">Register</a>
-        </form>
-    </div>
+        </form>-->
+    </div> 
 </body>
 
 </html>
